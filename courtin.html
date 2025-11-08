@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site Web - Devoirs Mme. Courtin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur mon site</h1>
+    <button id="theme-toggle" aria-label="Basculer le thème clair/sombre">🌙 Mode Sombre</button>
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="projets.html" class="active-link">Espace Projets / Devoirs</a> 
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main id="protected-content" style="display: none;">
+    <section>
+        
+        <h2>Travaux pour Mme.Courtin</h2> 
+        
+        <img src="images/courtin.jpg" alt="Photo de Mme.Courtin" class="prof-photo">
+        
+        <hr>
+        <p><a href="projets.html">← Retour à la liste des professeurs</a></p>
+        <button onclick="logout()" class="logout-button">Se déconnecter de cet espace</button> 
+
+    </section>
+</main>
+
+<div id="password-form-container">
+    <section>
+        <h2>Accès Mme. Courtin</h2>
+        <p>Veuillez entrer le mot de passe fourni par Taif.</p>
+        <div class="password-input">
+            <input type="password" id="password-input" placeholder="Mot de passe">
+            <button onclick="checkPassword('courtin')">Accéder</button>
+        </div>
+        <p id="error-message" style="color: red; margin-top: 10px;"></p>
+    </section>
+</div>
+
+<footer>
+    <p>&copy; 2025 Mon Site Web - ALHADAD Taif</p>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

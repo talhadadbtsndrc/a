@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mon Site Web - Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Bienvenue sur mon site</h1>
+    <button id="theme-toggle" aria-label="Basculer le thème clair/sombre">
+            🌙 Mode Sombre
+        </button>
+<nav>
+    <a href="index.html">Accueil</a>
+    <a href="a-propos.html">À propos</a>
+    <a href="projets.html">Espace Projets / Devoirs</a>
+    <a href="contact.html">Contact</a>
+</nav>
+  </header>
+
+  <main>
+    <section>
+        <h2>Contactez ALHADAD Taif</h2>
+        
+        <form id="contact-form" action="https://formsubmit.co/talhadad.btsndrc@gmail.com" method="POST">
+            
+            <input type="hidden" name="_next" value="http://127.0.0.1:5500/merci.html">
+            
+            <div class="form-row">
+                <label for="email">Votre Email :</label>
+                <input type="email" id="email" name="Email" required>
+            </div>
+            
+            <div class="form-row">
+                <label for="message">Message :</label>
+                <textarea id="message" name="Message" rows="4" required></textarea>
+            </div>
+            
+            <p id="form-error-message" style="color: red; margin-top: 10px;"></p>
+            
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+</main>
+
+  <footer>
+    <p>&copy; 2025 Mon Site Web - ALHADAD Taif</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
